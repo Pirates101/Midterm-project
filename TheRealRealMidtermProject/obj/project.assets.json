@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\manbe\\.nuget\\packages\\": {}
+    "C:\\Users\\rzepk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\manbe\\dev\\TheRealRealMidtermProject\\TheRealRealMidtermProject\\TheRealRealMidtermProject.csproj",
+      "projectUniqueName": "C:\\Users\\rzepk\\source\\repos\\Midterm-project\\TheRealRealMidtermProject\\TheRealRealMidtermProject.csproj",
       "projectName": "TheRealRealMidtermProject",
-      "projectPath": "C:\\Users\\manbe\\dev\\TheRealRealMidtermProject\\TheRealRealMidtermProject\\TheRealRealMidtermProject.csproj",
-      "packagesPath": "C:\\Users\\manbe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\manbe\\dev\\TheRealRealMidtermProject\\TheRealRealMidtermProject\\obj\\",
+      "projectPath": "C:\\Users\\rzepk\\source\\repos\\Midterm-project\\TheRealRealMidtermProject\\TheRealRealMidtermProject.csproj",
+      "packagesPath": "C:\\Users\\rzepk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rzepk\\source\\repos\\Midterm-project\\TheRealRealMidtermProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\manbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rzepk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
