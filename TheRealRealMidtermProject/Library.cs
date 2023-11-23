@@ -67,9 +67,27 @@ namespace TheRealRealMidtermProject
                     }
                 }
             }
-
         }
 
+        public void SearchByTitle()
+        {
+            Console.Write("Enter the title you want to search by: ");
+            string userTitle = Console.ReadLine().Trim();
+            foreach (Book book in LibraryBooks)
+            {
+                if (book.Title.Contains(userTitle, StringComparison.OrdinalIgnoreCase))
+                {
+                    if (book.CheckedOut == false)
+                    {
+                        Console.WriteLine($"{book.Title} by {book.Author} is available.");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Sorry, {book.Title} by {book.Author} is checked out");
+                    }
+                }
+            }
+        }
 
     }
 }
