@@ -12,3 +12,17 @@ C:\Users\Jake\class-dev\Projects\Midterm-project\TheRealRealMidtermProject\obj\D
 C:\Users\Jake\class-dev\Projects\Midterm-project\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.pdb
 C:\Users\Jake\class-dev\Projects\Midterm-project\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.genruntimeconfig.cache
 C:\Users\Jake\class-dev\Projects\Midterm-project\TheRealRealMidtermProject\obj\Debug\net6.0\ref\TheRealRealMidtermProject.dll
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\bin\Debug\net6.0\TheRealRealMidtermProject.exe
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\bin\Debug\net6.0\TheRealRealMidtermProject.deps.json
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\bin\Debug\net6.0\TheRealRealMidtermProject.runtimeconfig.json
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\bin\Debug\net6.0\TheRealRealMidtermProject.dll
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\bin\Debug\net6.0\TheRealRealMidtermProject.pdb
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.AssemblyInfoInputs.cache
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.AssemblyInfo.cs
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.csproj.CoreCompileInputs.cache
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.dll
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\obj\Debug\net6.0\refint\TheRealRealMidtermProject.dll
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.pdb
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.genruntimeconfig.cache
+C:\Users\manbe\dev\TheRealRealMidtermProject\TheRealRealMidtermProject\obj\Debug\net6.0\ref\TheRealRealMidtermProject.dll
