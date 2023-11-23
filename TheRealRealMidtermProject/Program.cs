@@ -8,7 +8,8 @@
 
             library.DisplayBooks();
 
-            library.SearchByAuthor();
+            //library.SearchByAuthor();
+            library.SearchByTitle();
         }
     }
 }
