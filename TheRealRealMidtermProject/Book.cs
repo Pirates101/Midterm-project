@@ -32,18 +32,7 @@ namespace TheRealRealMidtermProject
         //    // Like SearchByAuthor(), but using title as the search param
         //}
 
-        public void CheckOutBook()
-        {
-            // Select a book from the list and change CheckedOut from false to true
-
-            // User sees list of books
-            // User selects book 
-            // 
-            //
-            //
-            //
-            //
-        }
+        
 
     }
 }

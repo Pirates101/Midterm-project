@@ -12,6 +12,9 @@ namespace TheRealRealMidtermProject
 
         public Library()
         {
+            // Menu system from Frank
+            // Refine search by title
+
             LibraryBooks = new List<Book>();
 
             Book book1 = new Book("Stephen King", "The Shining", false, null);
@@ -39,6 +42,8 @@ namespace TheRealRealMidtermProject
             LibraryBooks.Add(book10);
             LibraryBooks.Add(book11);
             LibraryBooks.Add(book12);
+
+            // Formatting from Aimee
         }
 
         public void DisplayBooks()
@@ -55,7 +60,7 @@ namespace TheRealRealMidtermProject
             string userAuthor = Console.ReadLine().Trim();
             foreach (Book book in LibraryBooks)
             {
-                if (userAuthor.Equals(book.Author, StringComparison.OrdinalIgnoreCase))
+                if (book.Author.Contains(userAuthor, StringComparison.OrdinalIgnoreCase))
                 {
                     if (book.CheckedOut == false)
                     {
@@ -88,6 +93,19 @@ namespace TheRealRealMidtermProject
                 }
             }
         }
+
+        public void CheckOutBook(Book book)
+        {
+            
+
+
+
+
+            // Ben will work on this
+
+        }
+
+        // File IO work David
 
     }
 }
