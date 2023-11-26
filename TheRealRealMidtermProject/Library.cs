@@ -18,14 +18,14 @@ namespace TheRealRealMidtermProject
             LibraryBooks = new List<Book>();
 
             Book book1 = new Book("Stephen King", "The Shining", false, null);
-            Book book2 = new Book("Robert Jordan", "The Eye of the World", false, null);
+            Book book2 = new Book("Robert Jordan", "The Eye of the World", true, null);
             Book book3 = new Book("Stieg Larsson", "The Girl With the Dragon Tattoo", false, null);
             Book book4 = new Book("Rebecca Yaros", "Fourth Wing", false, null);
             Book book5 = new Book("Sara Novic", "True Biz", false, null);
             Book book6 = new Book("Bonnie Garmus", "Lessons in Chemistry", false, null);
             Book book7 = new Book("Dan Abnett", "Fell Cargo", false, null);
             Book book8 = new Book("Sarah Penner", "The Lost Apothecary", false, null);
-            Book book9 = new Book("Stacy Willingham", "A Flicker in the Dark", false, null);
+            Book book9 = new Book("Stacy Willingham", "A Flicker in the Dark", true, null);
             Book book10 = new Book("Suzanne Collins", "The Ballad of Songbirds and Snakes", false, null);
             Book book11 = new Book("Gabrielle Zevin", "Tomorrow and Tomorrow and Tomorrow", false, null);
             Book book12 = new Book("William King", "Dragonslayer", false, null);
@@ -76,22 +76,35 @@ namespace TheRealRealMidtermProject
 
         public void SearchByTitle()
         {
+            List<Book> searchResults = new List<Book>();
             Console.Write("Enter the title you want to search by: ");
             string userTitle = Console.ReadLine().Trim();
+            Console.WriteLine();
+            int idx = 1;
             foreach (Book book in LibraryBooks)
             {
                 if (book.Title.Contains(userTitle, StringComparison.OrdinalIgnoreCase))
                 {
                     if (book.CheckedOut == false)
                     {
-                        Console.WriteLine($"{book.Title} by {book.Author} is available.");
+                        Console.ForegroundColor= ConsoleColor.Green;
+                        Console.WriteLine($"{idx}. {book.Title} by {book.Author} - Status: AVAILABLE");
+                        searchResults.Add(book);
+                        idx++;
                     }
                     else
                     {
-                        Console.WriteLine($"Sorry, {book.Title} by {book.Author} is checked out");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine($"{idx}. {book.Title} by {book.Author} - Status: CHECKEDOUT");
+                        idx++;
                     }
                 }
             }
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine();
+            Console.WriteLine($"If you would like to check out one of these books, input the number below.\nInput 0 to go back to the main menu.");
+            var userInput = Console.ReadLine();
+            int.TryParse(userInput, out int bookSelection);
         }
 
         public void CheckOutBook(Book book)
