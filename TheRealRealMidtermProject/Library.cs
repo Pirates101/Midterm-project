@@ -122,12 +122,12 @@ namespace TheRealRealMidtermProject
 
         public void CheckOutBook(Book book)
         {
-            
+            book.CheckedOut = true;
 
-
-
-
-            // Ben will work on this
+        }
+        public void CheckInBook(Book book)
+        {
+            book.CheckedOut = false;
 
         }
 
