@@ -96,12 +96,12 @@ namespace TheRealRealMidtermProject
 
         public void CheckOutBook(Book book)
         {
-            // Stinker Poopy
+            book.CheckedOut = true;
 
-
-
-
-            // Ben will work on this
+        }
+        public void CheckInBook(Book book)
+        {
+            book.CheckedOut = false;
 
         }
 
