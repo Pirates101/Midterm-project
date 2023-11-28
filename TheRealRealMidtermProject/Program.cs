@@ -21,7 +21,8 @@
                 {
                     Console.WriteLine();
                     library.DisplayBooks();
-                    // Checkout Method goes here
+                    int bookSelection = library.GetBookId();
+                    library.CheckOutBook(bookSelection);
                     RunMainMenu();
                     break;
                 }
@@ -29,7 +30,8 @@
                 {
                     Console.WriteLine();
                     library.SearchByTitle();
-                    // Checkout Method goes here
+                    int bookSelection = library.GetBookId();
+                    library.CheckOutBook(bookSelection);
                     RunMainMenu();
                     break;
                 }
@@ -37,7 +39,8 @@
                 {
                     Console.WriteLine();
                     library.SearchByAuthor();
-                    // Checkout Method goes here
+                    int bookSelection = library.GetBookId();
+                    library.CheckOutBook(bookSelection);
                     RunMainMenu();
                     break;
                 }
