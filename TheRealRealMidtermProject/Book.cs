@@ -22,19 +22,5 @@ namespace TheRealRealMidtermProject
             CheckedOut = checkedOut;
             DueDate = dueDate;
         }
-
-
-
-
-
-
-
-        //public string SearchByTitle()
-        //{
-        //    // Like SearchByAuthor(), but using title as the search param
-        //}
-
-        
-
     }
 }

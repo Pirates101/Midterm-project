@@ -12,9 +12,6 @@ namespace TheRealRealMidtermProject
 
         public Library()
         {
-            // Menu system from Frank
-            // Refine search by title
-
             LibraryBooks = new List<Book>();
 
             Book book1 = new Book(1, "Stephen King", "The Shining", false, null);
@@ -42,22 +39,28 @@ namespace TheRealRealMidtermProject
             LibraryBooks.Add(book10);
             LibraryBooks.Add(book11);
             LibraryBooks.Add(book12);
-
-           
         }
 
         public void DisplayBooks()
         {
 
-            Console.WriteLine("{0, -40} {1, 40}", "Title", "Author"); //this adds columns for title and author
-            
+            Console.WriteLine("{0, 5} {1, 38} {2, 48} {3, 59}", "Book ID", "Title", "Author", "Status");
 
             foreach (Book book in LibraryBooks)
             {
-                Console.WriteLine("{0, -40} {1, 40}", book.Title, book.Author); //added formatting to fit in the columns 
-               
+                    if (book.CheckedOut == false)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("{0, 5} {1, 40} {2, 50} {3, 60}", book.BookID, book.Title, book.Author, "AVAILABLE");
+
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("{0, 5} {1, 40} {2, 50} {3, 60}", book.BookID, book.Title, book.Author, "CHECKED OUT");
+                    }
             }
-           
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
 
         public void SearchByAuthor()
@@ -136,8 +139,5 @@ namespace TheRealRealMidtermProject
             book.CheckedOut = false;
 
         }
-
-        // File IO work David
-
     }
 }
