@@ -1,21 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "XfhcePoAp8/bn8MTcN5RIPtWGKaaXipzPpU1nBhCCz83jDCtKFUnnw7DeJDmebmMSlhfTYCCwCxQ8Qa1Cc93/g==",
+  "dgSpecHash": "3uGPQOD1I+Ttazl6bqwf1DBjgSGBFPQ7fKPey/GP2NAry27+oc3pBup4TjFX5C1c52c6mGVNLEpK1QuJwaR1YA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rzepk\\source\\repos\\Midterm-project\\TheRealRealMidtermProject\\TheRealRealMidtermProject.csproj",
-=======
-  "dgSpecHash": "R0N5apZYRRd+/Df3M6MsC5bMnzprPruNLi1dXm5JKf0ICCf7QXDF+3m9qeeC9Vb15DFJhj3AeQbUAk0UKsdZ1A==",
-  "success": true,
-  "projectFilePath": "/Users/david/Projects/Midterm-project/TheRealRealMidtermProject/TheRealRealMidtermProject.csproj",
->>>>>>> David
+  "projectFilePath": "C:\\Users\\Jake\\class-dev\\Midterm-project\\TheRealRealMidtermProject\\TheRealRealMidtermProject.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\rzepk\\source\\repos\\Midterm-project\\TheRealRealMidtermProject\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

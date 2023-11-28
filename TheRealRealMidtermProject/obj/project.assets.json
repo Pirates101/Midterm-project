@@ -8,40 +8,32 @@
     "net6.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\rzepk\\.nuget\\packages\\": {}
-=======
-    "/Users/david/.nuget/packages/": {}
->>>>>>> David
+    "C:\\Users\\Jake\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\rzepk\\source\\repos\\Midterm-project\\TheRealRealMidtermProject\\TheRealRealMidtermProject.csproj",
+      "projectUniqueName": "C:\\Users\\Jake\\class-dev\\Midterm-project\\TheRealRealMidtermProject\\TheRealRealMidtermProject.csproj",
       "projectName": "TheRealRealMidtermProject",
-      "projectPath": "C:\\Users\\rzepk\\source\\repos\\Midterm-project\\TheRealRealMidtermProject\\TheRealRealMidtermProject.csproj",
-      "packagesPath": "C:\\Users\\rzepk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rzepk\\source\\repos\\Midterm-project\\TheRealRealMidtermProject\\obj\\",
+      "projectPath": "C:\\Users\\Jake\\class-dev\\Midterm-project\\TheRealRealMidtermProject\\TheRealRealMidtermProject.csproj",
+      "packagesPath": "C:\\Users\\Jake\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jake\\class-dev\\Midterm-project\\TheRealRealMidtermProject\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\rzepk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jake\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-=======
-      "projectUniqueName": "/Users/david/Projects/Midterm-project/TheRealRealMidtermProject/TheRealRealMidtermProject.csproj",
-      "projectName": "TheRealRealMidtermProject",
-      "projectPath": "/Users/david/Projects/Midterm-project/TheRealRealMidtermProject/TheRealRealMidtermProject.csproj",
-      "packagesPath": "/Users/david/.nuget/packages/",
-      "outputPath": "/Users/david/Projects/Midterm-project/TheRealRealMidtermProject/obj/",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "/Users/david/.nuget/NuGet/NuGet.Config"
->>>>>>> David
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -75,16 +67,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\rzepk\\source\\repos\\Midterm-project\\TheRealRealMidtermProject\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

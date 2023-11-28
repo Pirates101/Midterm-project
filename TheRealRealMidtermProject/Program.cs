@@ -6,13 +6,14 @@
         {
             Console.WriteLine("Welcome to the Grand Circus Library!");
             RunMainMenu();
+            // adfdfafkljadfjlkajg
         }
 
         static void RunMainMenu()
         {
             Library library = new Library();
 
-<<<<<<< HEAD
+
            
 
             library.DisplayBooks();
@@ -21,7 +22,6 @@
             Console.WriteLine();
 
             library.SearchByTitle();
-=======
             while (true)
             {
                 Console.WriteLine();
@@ -58,7 +58,6 @@
                     continue;
                 }
             }
->>>>>>> 9e95c3f38311a316c156716e4fe1682d3918745f
         }
     }
 }
