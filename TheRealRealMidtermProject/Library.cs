@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -123,15 +124,28 @@ namespace TheRealRealMidtermProject
                 }
             }
             Console.ForegroundColor = ConsoleColor.Gray;
+            int bookSelection = GetBookId();
+            CheckOutBook(bookSelection);
+        }
+        
+        public int GetBookId()
+        {
             Console.WriteLine();
             Console.Write($"If you would like to check out one of these books, enter the Book ID here or enter 0 to go back to the main menu: ");
             var userInput = Console.ReadLine();
             int.TryParse(userInput, out int bookSelection);
+            return bookSelection;
         }
 
-        public void CheckOutBook(Book book)
+        public void CheckOutBook(int bookSelection)
         {
-            book.CheckedOut = true;
+            foreach (Book book in LibraryBooks)
+            {
+                if (bookSelection == book.BookID)
+                {
+                    book.CheckedOut = true;
+                }
+            }
 
         }
         public void CheckInBook(Book book)
