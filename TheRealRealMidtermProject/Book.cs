@@ -8,13 +8,15 @@ namespace TheRealRealMidtermProject
 {
     public class Book
     {
+        public int BookID { get; set; }
         public string Author { get; set; }
         public string Title { get; set; }
         public bool CheckedOut { get; set; }
         public string DueDate { get; set; }
 
-        public Book(string author, string title, bool checkedOut, string dueDate)
+        public Book(int id, string author, string title, bool checkedOut, string dueDate)
         {
+            BookID = id;
             Author = author;
             Title = title;
             CheckedOut = checkedOut;

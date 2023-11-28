@@ -4,10 +4,16 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to the Grand Circus Library!");
+            RunMainMenu();
+        }
+
+        static void RunMainMenu()
+        {
             Library library = new Library();
 
-            Console.WriteLine("Welcome to the Poutine Tots Libary. \nSee below for a list of our books. You can also search by title or author to check availability.");
-            Console.WriteLine();
+<<<<<<< HEAD
+           
 
             library.DisplayBooks();
 
@@ -15,6 +21,44 @@
             Console.WriteLine();
 
             library.SearchByTitle();
+=======
+            while (true)
+            {
+                Console.WriteLine();
+                Console.WriteLine($"What would you like to do? \n1. View a list of all books in the library \n2. Search for a book by title \n3. Search for a book by author\n4. Leave the library");
+                Console.Write("Selection: ");
+                string userResponse = Console.ReadLine();
+                if (userResponse == "1")
+                {
+                    Console.WriteLine();
+                    library.DisplayBooks();
+                    break;
+                }
+                if (userResponse == "2")
+                {
+                    Console.WriteLine();
+                    library.SearchByTitle();
+                    break;
+                }
+                if (userResponse == "3")
+                {
+                    Console.WriteLine();
+                    library.SearchByAuthor();
+                    break;
+                }
+                if (userResponse == "4")
+                {
+                    Console.Clear();
+                    Console.WriteLine($"\n Thank you for visiting the library! We hope to see you again soon!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine($"Invalid selection. Please choose from the list below.");
+                    continue;
+                }
+            }
+>>>>>>> 9e95c3f38311a316c156716e4fe1682d3918745f
         }
     }
 }
