@@ -21,18 +21,24 @@
                 {
                     Console.WriteLine();
                     library.DisplayBooks();
+                    // Checkout Method goes here
+                    RunMainMenu();
                     break;
                 }
                 if (userResponse == "2")
                 {
                     Console.WriteLine();
                     library.SearchByTitle();
+                    // Checkout Method goes here
+                    RunMainMenu();
                     break;
                 }
                 if (userResponse == "3")
                 {
                     Console.WriteLine();
                     library.SearchByAuthor();
+                    // Checkout Method goes here
+                    RunMainMenu();
                     break;
                 }
                 if (userResponse == "4")
