@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{9F86EC75-3766-436F-AC7F-D4FD4B792007}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TheRealRealMidtermProject/Program.cs">
+    <Files>
+      <File FileName="TheRealRealMidtermProject/Book.cs" Line="1" Column="1" />
+      <File FileName="TheRealRealMidtermProject/Library.cs" Line="1" Column="1" />
+      <File FileName="TheRealRealMidtermProject/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TheRealRealMidtermProject">
+            <Node name="TheRealRealMidtermProject" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TheRealRealMidtermProject PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
