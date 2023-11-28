@@ -43,15 +43,21 @@ namespace TheRealRealMidtermProject
             LibraryBooks.Add(book11);
             LibraryBooks.Add(book12);
 
-            // Formatting from Aimee
+           
         }
 
         public void DisplayBooks()
         {
+
+            Console.WriteLine("{0, -40} {1, 40}", "Title", "Author"); //this adds columns for title and author
+            
+
             foreach (Book book in LibraryBooks)
             {
-                Console.WriteLine($"{book.Title}, {book.Author}");
+                Console.WriteLine("{0, -40} {1, 40}", book.Title, book.Author); //added formatting to fit in the columns 
+               
             }
+           
         }
 
         public void SearchByAuthor()
