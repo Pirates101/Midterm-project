@@ -15,18 +15,18 @@ namespace TheRealRealMidtermProject
         {
             LibraryBooks = new List<Book>();
 
-            Book book1 = new Book(1, "Stephen King", "The Shining", false, null);
-            Book book2 = new Book(2, "Robert Jordan", "The Eye of the World", true, null);
-            Book book3 = new Book(3, "Stieg Larsson", "The Girl With the Dragon Tattoo", false, null);
-            Book book4 = new Book(4, "Rebecca Yaros", "Fourth Wing", false, null);
-            Book book5 = new Book(5, "Sara Novic", "True Biz", false, null);
-            Book book6 = new Book(6, "Bonnie Garmus", "Lessons in Chemistry", false, null);
-            Book book7 = new Book(7, "Dan Abnett", "Fell Cargo", false, null);
-            Book book8 = new Book(8, "Sarah Penner", "The Lost Apothecary", false, null);
-            Book book9 = new Book(9, "Stacy Willingham", "A Flicker in the Dark", true, null);
-            Book book10 = new Book(10, "Suzanne Collins", "The Ballad of Songbirds and Snakes", false, null);
-            Book book11 = new Book(11, "Gabrielle Zevin", "Tomorrow and Tomorrow and Tomorrow", false, null);
-            Book book12 = new Book(12, "William King", "Dragonslayer", false, null);
+            Book book1 = new Book(1, "Stephen King", "The Shining", false, "N/A");
+            Book book2 = new Book(2, "Robert Jordan", "The Eye of the World", true, "January 1st, 2024");
+            Book book3 = new Book(3, "Stieg Larsson", "The Girl With the Dragon Tattoo", false, "N/A");
+            Book book4 = new Book(4, "Rebecca Yaros", "Fourth Wing", false, "N/A");
+            Book book5 = new Book(5, "Sara Novic", "True Biz", false, "N/A");
+            Book book6 = new Book(6, "Bonnie Garmus", "Lessons in Chemistry", false, "N/A");
+            Book book7 = new Book(7, "Dan Abnett", "Fell Cargo", false, "N/A");
+            Book book8 = new Book(8, "Sarah Penner", "The Lost Apothecary", false, "N/A");
+            Book book9 = new Book(9, "Stacy Willingham", "A Flicker in the Dark", true, "January 1st, 2024");
+            Book book10 = new Book(10, "Suzanne Collins", "The Ballad of Songbirds and Snakes", false, "N/A");
+            Book book11 = new Book(11, "Gabrielle Zevin", "Tomorrow and Tomorrow and Tomorrow", false, "N/A");
+            Book book12 = new Book(12, "William King", "Dragonslayer", false, "N/A");
 
             LibraryBooks.Add(book1);
             LibraryBooks.Add(book2);
@@ -153,5 +153,6 @@ namespace TheRealRealMidtermProject
             book.CheckedOut = false;
 
         }
+
     }
 }
