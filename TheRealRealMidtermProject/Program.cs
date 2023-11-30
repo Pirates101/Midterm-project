@@ -14,6 +14,7 @@ namespace TheRealRealMidtermProject
         {
             FileIO fileIO = new FileIO();
             Library library = new Library();
+            int bookSelection = 0;
             while (true)
             {
                 Console.WriteLine();
@@ -24,40 +25,34 @@ namespace TheRealRealMidtermProject
                 {
                     Console.WriteLine();
                     library.DisplayBooks();
-                    int bookSelection = library.GetBookId();
-                    library.CheckOutBook(bookSelection);
-                    RunMainMenu();
-                    break;
+                    CheckoutBook(library);
                 }
-                if (userResponse == "2")
-                {
+
+                else if (userResponse == "2")
+                     {
                     Console.WriteLine();
                     library.SearchByTitle();
-                    int bookSelection = library.GetBookId();
-                    library.CheckOutBook(bookSelection);
-                    RunMainMenu();
-                    break;
-                }
-                if (userResponse == "3")
-                {
+                    CheckoutBook(library);
+                     }
+
+                else if (userResponse == "3")
+                     {
                     Console.WriteLine();
                     library.SearchByAuthor();
-                    int bookSelection = library.GetBookId();
-                    library.CheckOutBook(bookSelection);
-                    RunMainMenu();
-                    break;
-                }
-                if (userResponse == "4")
-                {
+                    CheckoutBook(library);
+                     }
+
+                else if (userResponse == "4")
+                     {
                     Console.Clear();
                     WriteToFile(library);
                     Console.WriteLine($" \n The status of the library can be found in Users/AppData/Library/Library.txt\n Thank you for visiting the library! We hope to see you again soon!");
                     break;
-                }
+                     }
+
                 else
                 {
                     Console.WriteLine($"Invalid selection. Please choose from the list below.");
-                    continue;
                 }
             }
         }
@@ -73,6 +68,23 @@ namespace TheRealRealMidtermProject
                         $"Title: {book.Title}; " +
                         $"Checked out? {book.CheckedOut}; " +
                         $"Due date: {book.DueDate}\n");
+                }
+        }
+
+        static void CheckoutBook(Library library)
+        {
+            int bookSelection = library.GetBookId();
+
+                foreach (Book book in library.LibraryBooks)
+                {
+                    if (book.BookID == bookSelection)
+                    {
+                        book.CheckedOut = true;
+                    }
+                    if (bookSelection == 0) 
+                    {
+                        break;
+                    }
                 }
         }
     }
