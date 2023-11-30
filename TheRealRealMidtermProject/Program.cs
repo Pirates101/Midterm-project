@@ -1,6 +1,8 @@
-﻿namespace TheRealRealMidtermProject
+﻿using System.Net.Mail;
+
+namespace TheRealRealMidtermProject
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -10,6 +12,7 @@
 
         static void RunMainMenu()
         {
+            FileIO fileIO = new FileIO();
             Library library = new Library();
             while (true)
             {
@@ -47,7 +50,8 @@
                 if (userResponse == "4")
                 {
                     Console.Clear();
-                    Console.WriteLine($"\n Thank you for visiting the library! We hope to see you again soon!");
+                    WriteToFile(library);
+                    Console.WriteLine($" \n The status of the library can be found in Users/AppData/Library/Library.txt\n Thank you for visiting the library! We hope to see you again soon!");
                     break;
                 }
                 else
@@ -56,6 +60,20 @@
                     continue;
                 }
             }
+        }
+
+        static void WriteToFile(Library library)
+        {
+            FileIO fileIO = new FileIO();
+            using (StreamWriter file = File.CreateText(fileIO.TryGetBookFile()))
+                foreach (Book book in library.LibraryBooks)
+                {
+                    file.WriteLine($"BookID: {book.BookID}; " +
+                        $"Author: {book.Author}; " +
+                        $"Title: {book.Title}; " +
+                        $"Checked out? {book.CheckedOut}; " +
+                        $"Due date: {book.DueDate}\n");
+                }
         }
     }
 }
