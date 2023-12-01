@@ -14,11 +14,10 @@ namespace TheRealRealMidtermProject
         {
             FileIO fileIO = new FileIO();
             Library library = new Library();
-            int bookSelection = 0;
             while (true)
             {
                 Console.WriteLine();
-                Console.WriteLine($"What would you like to do? \n1. View a list of all books in the library \n2. Search for a book by title \n3. Search for a book by author\n4. Leave the library");
+                Console.WriteLine($"What would you like to do? \n1. View a list of all books in the library \n2. Search for a book by title \n3. Search for a book by author\n4. Return a book\n5. Leave the library");
                 Console.Write("Selection: ");
                 string userResponse = Console.ReadLine();
                 if (userResponse == "1")
@@ -29,26 +28,33 @@ namespace TheRealRealMidtermProject
                 }
 
                 else if (userResponse == "2")
-                     {
+                {
                     Console.WriteLine();
                     library.SearchByTitle();
                     CheckoutBook(library);
-                     }
+                }
 
                 else if (userResponse == "3")
-                     {
+                {
                     Console.WriteLine();
                     library.SearchByAuthor();
                     CheckoutBook(library);
-                     }
+                }
 
                 else if (userResponse == "4")
-                     {
+                {
+                    Console.WriteLine();
+                    library.DisplayBooks();
+                    CheckInBook(library);
+                }
+
+                else if (userResponse == "5")
+                {
                     Console.Clear();
                     WriteToFile(library);
                     Console.WriteLine($" \n The status of the library can be found in Users/AppData/Library/Library.txt\n Thank you for visiting the library! We hope to see you again soon!");
                     break;
-                     }
+                }
 
                 else
                 {
@@ -73,13 +79,14 @@ namespace TheRealRealMidtermProject
 
         static void CheckoutBook(Library library)
         {
-            int bookSelection = library.GetBookId();
+            int bookSelection = library.GetBookId("Enter the book ID of the book you would like to check out: ");
 
                 foreach (Book book in library.LibraryBooks)
                 {
                     if (book.BookID == bookSelection)
                     {
                         book.CheckedOut = true;
+                        book.DueDate = DateTime.UtcNow.AddDays(14);
                     }
                     if (bookSelection == 0) 
                     {
@@ -87,5 +94,19 @@ namespace TheRealRealMidtermProject
                     }
                 }
         }
+
+        static void CheckInBook(Library library)
+        {
+            int bookSelection = library.GetBookId("Enter the book ID of the book you would like to return: ");
+
+            foreach (Book book in library.LibraryBooks)
+            {
+                if (book.BookID == bookSelection)
+                {
+                    book.CheckedOut = false;
+                }
+            }
+        }
+
     }
 }
