@@ -73,11 +73,14 @@ namespace TheRealRealMidtermProject
             using (StreamWriter file = File.CreateText(fileIO.TryGetBookFile()))
                 foreach (Book book in library.LibraryBooks)
                 {
-                    file.WriteLine($"BookID: {book.BookID}; " +
-                        $"Author: {book.Author}; " +
-                        $"Title: {book.Title}; " +
-                        $"Checked out? {book.CheckedOut}; " +
-                        $"Due date: {book.DueDate}\n");
+                    if (book.CheckedOut == true)
+                    {
+                        file.WriteLine($"BookID: {book.BookID}; " + $"Author: {book.Author}; " + $"Title: {book.Title}; " + $"Checked out? {book.CheckedOut}; " + $"Due date: {book.DueDate}\n");
+                    }
+                    else if (book.CheckedOut == false)
+                    {
+                        file.WriteLine($"BookID: {book.BookID}; " + $"Author: {book.Author}; " + $"Title: {book.Title}; " + $"Checked out? {book.CheckedOut}; " + $"Due date: N/A\n");
+                    }
                 }
         }
 
@@ -91,16 +94,15 @@ namespace TheRealRealMidtermProject
                     {
                         book.CheckedOut = true;
                         book.DueDate = DateTime.UtcNow.AddDays(14);
-                    Console.Write($"\n{book.Title} has been successfully ");
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write("CHECKED OUT");
-                    Console.ForegroundColor = ConsoleColor.Gray;
-                    Console.Write(" and is due back on ");
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write($"{book.DueDate}");
-                    Console.ForegroundColor = ConsoleColor.Gray;
-                    Console.WriteLine(".");
-
+                        Console.Write($"\n{book.Title} has been successfully ");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("CHECKED OUT");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.Write(" and is due back on ");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write($"{book.DueDate}");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.WriteLine(".");
 
                     PressAnyKeyToContinue();
                 }
