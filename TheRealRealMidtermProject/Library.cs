@@ -45,20 +45,20 @@ namespace TheRealRealMidtermProject
         public void DisplayBooks()
         {
 
-            Console.WriteLine("{0, 5} {1, 38} {2, 48} {3, 59}", "Book ID", "Title", "Author", "Status");
+            Console.WriteLine("{0, 5} {1, 35} {2, 40} {3, 32} {4, 33}", "Book ID", "Title", "Author", "Status", "Due Date");
 
             foreach (Book book in LibraryBooks)
             {
                     if (book.CheckedOut == false)
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("{0, 5} {1, 40} {2, 50} {3, 60}", book.BookID, book.Title, book.Author, "AVAILABLE");
+                        Console.WriteLine("{0, 5} {1, 40} {2, 40} {3, 30} {4, 30}", book.BookID, book.Title, book.Author, "AVAILABLE", "N/A");
 
                     }
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("{0, 5} {1, 40} {2, 50} {3, 60} {4, 70} {5, 80}", book.BookID, book.Title, book.Author, "CHECKED OUT", "Due date: ",book.DueDate );
+                        Console.WriteLine("{0, 5} {1, 40} {2, 40} {3, 30} {4, 30}", book.BookID, book.Title, book.Author, "CHECKED OUT", book.DueDate );
                     }
             }
             Console.ForegroundColor = ConsoleColor.Gray;
@@ -70,23 +70,22 @@ namespace TheRealRealMidtermProject
             Console.Write("Enter the author you want to search by: ");
             string userAuthor = Console.ReadLine().Trim();
             Console.WriteLine();
-            int idx = 1;
+            Console.WriteLine("{0, 5} {1, 35} {2, 40} {3, 32} {4, 33}", "Book ID", "Title", "Author", "Status", "Due Date");
             foreach (Book book in LibraryBooks)
             {
                 if (book.Author.Contains(userAuthor, StringComparison.OrdinalIgnoreCase))
                 {
+                    
                     if (book.CheckedOut == false)
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine($"{idx}. (Book ID: {book.BookID}) {book.Title} by {book.Author} - Status: AVAILABLE");
+                        Console.WriteLine("{0, 5} {1, 40} {2, 40} {3, 30} {4, 30}", book.BookID, book.Title, book.Author, "AVAILABLE", "N/A");
                         searchResults.Add(book);
-                        idx++;
                     }
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine($"{idx}. (Book ID: {book.BookID}) {book.Title} by {book.Author} - Status: CHECKEDOUT");
-                        idx++;
+                        Console.WriteLine("{0, 5} {1, 40} {2, 40} {3, 30} {4, 30}", book.BookID, book.Title, book.Author, "AVAILABLE", "N/A");
                     }
                 }
             }
@@ -100,7 +99,7 @@ namespace TheRealRealMidtermProject
             Console.Write("Enter the title you want to search by: ");
             string userTitle = Console.ReadLine().Trim();
             Console.WriteLine();
-            int idx = 1;
+            Console.WriteLine("{0, 5} {1, 35} {2, 40} {3, 32} {4, 33}", "Book ID", "Title", "Author", "Status", "Due Date");
             foreach (Book book in LibraryBooks)
             {
                 if (book.Title.Contains(userTitle, StringComparison.OrdinalIgnoreCase))
@@ -108,15 +107,13 @@ namespace TheRealRealMidtermProject
                     if (book.CheckedOut == false)
                     {
                         Console.ForegroundColor= ConsoleColor.Green;
-                        Console.WriteLine($"{idx}. (Book ID: {book.BookID}) {book.Title} by {book.Author} - Status: AVAILABLE");
+                        Console.WriteLine("{0, 5} {1, 40} {2, 40} {3, 30} {4, 30}", book.BookID, book.Title, book.Author, "AVAILABLE", "N/A");
                         searchResults.Add(book);
-                        idx++;
                     }
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine($"{idx}. (Book ID: {book.BookID}) {book.Title} by {book.Author} - Status: CHECKEDOUT");
-                        idx++;
+                        Console.WriteLine("{0, 5} {1, 40} {2, 40} {3, 30} {4, 30}", book.BookID, book.Title, book.Author, "AVAILABLE", "N/A");
                     }
                 }
             }
