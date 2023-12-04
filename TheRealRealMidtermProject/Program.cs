@@ -17,7 +17,7 @@ namespace TheRealRealMidtermProject
             while (true)
             {
                 Console.WriteLine();
-                Console.WriteLine($"==MAIN MENU==\n\nWhat would you like to do? \n1. View a list of all books in the library \n2. Search for a book by title \n3. Search for a book by author\n4. Return a book\n5. Leave the library");
+                Console.WriteLine($"==MAIN MENU==\n\nWhat would you like to do? \n\n1. View a list of all books in the library \n2. Search for a book by title \n3. Search for a book by author\n4. Return a book\n5. Leave the library");
                 Console.Write("\nSelection: ");
                 string userResponse = Console.ReadLine();
                 if (userResponse == "1")
@@ -73,11 +73,14 @@ namespace TheRealRealMidtermProject
             using (StreamWriter file = File.CreateText(fileIO.TryGetBookFile()))
                 foreach (Book book in library.LibraryBooks)
                 {
-                    file.WriteLine($"BookID: {book.BookID}; " +
-                        $"Author: {book.Author}; " +
-                        $"Title: {book.Title}; " +
-                        $"Checked out? {book.CheckedOut}; " +
-                        $"Due date: {book.DueDate}\n");
+                    if (book.CheckedOut == true)
+                    {
+                        file.WriteLine($"BookID: {book.BookID}; " + $"Author: {book.Author}; " + $"Title: {book.Title}; " + $"Checked out? {book.CheckedOut}; " + $"Due date: {book.DueDate}\n");
+                    }
+                    else if (book.CheckedOut == false)
+                    {
+                        file.WriteLine($"BookID: {book.BookID}; " + $"Author: {book.Author}; " + $"Title: {book.Title}; " + $"Checked out? {book.CheckedOut}; " + $"Due date: N/A\n");
+                    }
                 }
         }
 
@@ -91,7 +94,18 @@ namespace TheRealRealMidtermProject
                     {
                         book.CheckedOut = true;
                         book.DueDate = DateTime.UtcNow.AddDays(14);
-                    }
+                        Console.Write($"\n{book.Title} has been successfully ");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("CHECKED OUT");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.Write(" and is due back on ");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write($"{book.DueDate}");
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.WriteLine(".");
+
+                    PressAnyKeyToContinue();
+                }
                     if (bookSelection == 0) 
                     {
                         break;
@@ -108,8 +122,21 @@ namespace TheRealRealMidtermProject
                 if (book.BookID == bookSelection)
                 {
                     book.CheckedOut = false;
+                    Console.Write($"\n{book.Title} has been successfully ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write("CHECKED IN");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine(". Thank you!");
+                    PressAnyKeyToContinue();
                 }
             }
+        }
+
+        static void PressAnyKeyToContinue()
+        {
+            Console.Write("\nPress any key to return to the Main Menu.");
+            Console.ReadKey();
+            Console.Clear();
         }
 
     }
