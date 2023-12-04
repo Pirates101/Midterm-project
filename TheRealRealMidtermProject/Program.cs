@@ -22,7 +22,7 @@ namespace TheRealRealMidtermProject
             while (true)
             {
                 Console.WriteLine();
-                Console.WriteLine($"==MAIN MENU==\n\nWhat would you like to do? \n\n1. View a list of all books in the library \n2. Search for a book by title \n3. Search for a book by author\n4. Return a book\n5. Leave the library");
+                Console.WriteLine($"==MAIN MENU==\n\nWhat would you like to do? \n\n1. View a list of all books in the library \n2. Search for a book by title \n3. Search for a book by author\n4. Return a book\n5. Leave the library\n6. BURN THE LIBRARY TO THE GROUND");
                 Console.Write("\nSelection: ");
                 string userResponse = Console.ReadLine();
                 if (userResponse == "1")
@@ -155,7 +155,7 @@ namespace TheRealRealMidtermProject
 
         static void BurnItDown()
         {
-            string imagePath = @"C:\Users\manbe\dev\TheRealRealMidtermProject\Fire2.jpg";
+            string imagePath = @"C:\Users\Jake\class-dev\Midterm-project\Fire2.jpg";
 
             using var inputStream = new FileStream(
                 imagePath,
