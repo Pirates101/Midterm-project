@@ -22,7 +22,7 @@ namespace TheRealRealMidtermProject
             while (true)
             {
                 Console.WriteLine();
-                Console.WriteLine($"What would you like to do? \n1. View a list of all books in the library \n2. Search for a book by title \n3. Search for a book by author\n4. Return a book\n5. Leave the library");
+                Console.WriteLine($"What would you like to do? \n1. View a list of all books in the library \n2. Search for a book by title \n3. Search for a book by author\n4. Return a book\n5. Leave the library\n6. Burn down the library");
                 Console.Write("Selection: ");
                 string userResponse = Console.ReadLine();
                 if (userResponse == "1")
@@ -64,7 +64,9 @@ namespace TheRealRealMidtermProject
                 else if (userResponse == "6")
                 {
                     Console.Clear();
+                    
                     BurnItDown();
+                    Console.WriteLine("The library is on fire AHHHHHHHHHHHHHH");
                     break;
                 }
 
