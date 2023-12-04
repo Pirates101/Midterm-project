@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XfhcePoAp8/bn8MTcN5RIPtWGKaaXipzPpU1nBhCCz83jDCtKFUnnw7DeJDmebmMSlhfTYCCwCxQ8Qa1Cc93/g==",
+  "dgSpecHash": "6VVE4h9YKDAlBJPwGah3sym6TlG7B7npSwcf4fwZKV1mXZZ07csNMU4PXnKkDANNpu1eoHJU/DDUinqn/fiYdQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rzepk\\source\\repos\\Midterm-project\\TheRealRealMidtermProject\\TheRealRealMidtermProject.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Jake\\class-dev\\Midterm-project\\TheRealRealMidtermProject\\TheRealRealMidtermProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jake\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\Jake\\.nuget\\packages\\sixlabors.imagesharp\\3.1.0\\sixlabors.imagesharp.3.1.0.nupkg.sha512",
+    "C:\\Users\\Jake\\.nuget\\packages\\system.drawing.common\\8.0.0\\system.drawing.common.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
