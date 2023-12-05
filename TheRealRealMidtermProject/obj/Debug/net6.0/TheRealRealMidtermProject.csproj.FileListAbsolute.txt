@@ -40,3 +40,9 @@ C:\Users\rzepk\source\repos\Midterm-project\TheRealRealMidtermProject\obj\Debug\
 C:\Users\rzepk\source\repos\Midterm-project\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.pdb
 C:\Users\rzepk\source\repos\Midterm-project\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.genruntimeconfig.cache
 C:\Users\rzepk\source\repos\Midterm-project\TheRealRealMidtermProject\obj\Debug\net6.0\ref\TheRealRealMidtermProject.dll
+C:\Users\Jake\class-dev\Midterm-project\TheRealRealMidtermProject\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Jake\class-dev\Midterm-project\TheRealRealMidtermProject\bin\Debug\net6.0\SixLabors.ImageSharp.dll
+C:\Users\Jake\class-dev\Midterm-project\TheRealRealMidtermProject\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Jake\class-dev\Midterm-project\TheRealRealMidtermProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Jake\class-dev\Midterm-project\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.csproj.AssemblyReference.cache
+C:\Users\Jake\class-dev\Midterm-project\TheRealRealMidtermProject\obj\Debug\net6.0\TheRealRealMidtermProject.csproj.CopyComplete
