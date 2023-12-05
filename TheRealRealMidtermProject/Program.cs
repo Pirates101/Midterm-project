@@ -104,7 +104,7 @@ namespace TheRealRealMidtermProject
 
                 foreach (Book book in library.LibraryBooks)
                 {
-                    if (book.BookID == bookSelection)
+                    if (book.BookID == bookSelection && book.CheckedOut == false)
                     {
                         book.CheckedOut = true;
                         book.DueDate = DateTime.UtcNow.AddDays(14);
@@ -119,10 +119,15 @@ namespace TheRealRealMidtermProject
                         Console.WriteLine(".");
 
                     PressAnyKeyToContinue();
-                }
-                    if (bookSelection == 0) 
+                    }
+                    else if (book.CheckedOut == true)
                     {
-                        break;
+                    Console.WriteLine($"\n {book.Title} is already checked out.");
+                    PressAnyKeyToContinue();
+                    }
+                    else if (bookSelection == 0)
+                    {
+                    break;
                     }
                 }
         }
@@ -133,7 +138,7 @@ namespace TheRealRealMidtermProject
 
             foreach (Book book in library.LibraryBooks)
             {
-                if (book.BookID == bookSelection)
+                if (book.BookID == bookSelection && book.CheckedOut == true)
                 {
                     book.CheckedOut = false;
                     Console.Write($"\n{book.Title} has been successfully ");
@@ -141,7 +146,18 @@ namespace TheRealRealMidtermProject
                     Console.Write("CHECKED IN");
                     Console.ForegroundColor = ConsoleColor.Gray;
                     Console.WriteLine(". Thank you!");
-                    PressAnyKeyToContinue();
+
+                PressAnyKeyToContinue();
+                }
+                else if (book.CheckedOut == false)
+                {
+                Console.WriteLine($"\n{book.Title} is not checked out.");
+                PressAnyKeyToContinue();
+                break;
+                }
+                else if (bookSelection == 0)
+                {
+                break;
                 }
             }
         }
